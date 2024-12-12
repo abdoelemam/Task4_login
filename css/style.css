@@ -1,0 +1,101 @@
+body{
+    background-color: #24353F;
+}
+
+form{
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+h1{
+    color: #17a2b8;
+}
+
+.form-control  {
+    background-color: transparent;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 0.6; /* Ensures full opacity for the placeholder text */
+  }
+
+.form-control:focus {
+    color: white;
+    box-shadow: none;
+}
+
+.container .text-decoration-none:hover {
+    text-decoration: underline !important;
+}
+
+#alert-fail,#alert-empty,#Check{
+    color: red;
+}
+
+#alert-success{
+    color: green;
+}
+
+
+
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}  
+
+.circles span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: red;
+}
+
+.message{
+    border-radius: 0.8rem;
+    width: 30%;
+}
+
+.message p{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(53, 46, 40)    ;
+    font-size: 1.3rem;
+}
+
+.message ul{
+    color: rgb(33, 37, 41);
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    list-style-type: none ;
+    padding: 0;
+}
+
+@media screen and (max-width:1150px) {
+    .message{
+        width: 50%;
+    }
+}
+
+.icon{
+    border: 4px solid white;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+}
+
+.btn-success{
+    border-radius: 1.2rem;
+}
+
+.part{
+    padding: 4rem 2.5rem ;
+}

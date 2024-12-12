@@ -1,0 +1,19 @@
+body{
+    background-color: #24353F;
+}
+
+section{
+    background-color: #24353F;
+    height: 100vh;
+}
+
+.bg-body-tertiary {
+    background-color: #24353F !important;
+}
+.con{
+    width: 70%;
+}
+
+.btn-log{
+    font-size: 1.2rem;
+}

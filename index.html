@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="" class="p-5 text-center w-75 m-auto ">
+            <h1 class="mb-4">Smart Login System</h1>
+            <input type="text" id="Name"  class="form-control my-3 bg-transparent "  placeholder="Enter Your Name">
+            <input type="email" id="Email"  class="form-control my-3 bg-transparent " placeholder="Enter Your Email" >
+            <input type="password" id="Pass"  class="form-control my-3 bg-transparent " placeholder="Enter Your Password" >
+
+            <button  class="btn mybtn btn-outline-info mt-4 w-100">Sign Up</button>
+            <div class="alert bg-transparent border-0 d-none" id="alert-success">signed up successfuly</div>
+            <div class="alert bg-transparent border-0 d-none" id="alert-empty">all inputs required</div>
+            <div class="alert bg-transparent border-0 d-none" id="alert-fail">You signed up before with this email</div>
+            <p class="text-white mt-3">You have an account? <a href="./pages/signin.html" class="text-white text-decoration-none ">Signin</a></p>
+        </form>
+    </div>
+
+    <div  id="Layer" class="layer success-mess d-flex justify-content-center align-items-center d-none">
+        <div class="message bg-white overflow-hidden">
+            <div class="part1 part bg-success d-flex justify-content-center">
+                    <div class=" d-flex text-white flex-column align-items-center ">
+                        <span class="d-block  d-flex justify-content-center align-items-center  rounded-circle icon"> <i class="fa-solid fa-check"></i></span>
+                        <h2 class=" text-center">Success</h2>
+                    </div>
+            </div>
+
+            <div class="part2 part d-flex flex-column align-items-center ">
+                <p class="text-center">Congratulations, your account has been successfully created.</p>
+                <button class="btn btn-success fs-5 px-3 py-2 px-md-5 py-md-2 mt-3 ">
+                    <a href="./pages/signin.html" class="text-decoration-none text-white">Continue</a>
+                </button>
+            </div>
+        </div>
+    </div>   
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
