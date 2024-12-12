@@ -43,7 +43,7 @@ function signinn(){
         var username = add_get_username(emailLog)
         sessionStorage.setItem("loginUsers",JSON.stringify(users_login) ) ;
 
-        window.location.pathname = "/pages/home.html" ;
+        window.location.pathname = "Task4_login/pages/home.html" ;
         
     }
 
@@ -51,7 +51,7 @@ function signinn(){
 
 
 
-if (window.location.pathname == "/pages/home.html") {
+if (window.location.pathname == "Task4_login/pages/home.html") {
     function display() {
         // Check if there is a logged-in user
         if (users_login.length > 0) {
@@ -77,13 +77,13 @@ function logout(username) {
     con_logout.innerHTML = ``;
 
     
-    window.location.href = "/pages/signin.html";
+    window.location.href = "Task4_login/pages/signin.html";
 }
 
 
 
 
-if(window.location.pathname == "/pages/signin.html"){
+if(window.location.pathname == "Task4_login/pages/signin.html"){
     btnLog.addEventListener("click", function (e) {
         e.preventDefault(); // Prevent form submission
     
