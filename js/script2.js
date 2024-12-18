@@ -51,7 +51,7 @@ function signinn(){
 
 
 
-if (window.location.pathname == "/pages/home.html") {
+if (window.location.pathname == "Task4_login/pages/home.html") {
     function display() {
         // Check if there is a logged-in user
         if (users_login.length > 0) {
