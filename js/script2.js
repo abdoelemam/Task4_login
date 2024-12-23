@@ -77,13 +77,13 @@ function logout(username) {
     con_logout.innerHTML = ``;
 
     
-    window.location.href = "/pages/signin.html";
+    window.location.pathname = "Task4_login/pages/signin.html";
 }
 
 
 
 
-if(window.location.pathname == "/pages/signin.html"){
+if(window.location.pathname == "Task4_login/pages/signin.html"){
     btnLog.addEventListener("click", function (e) {
         e.preventDefault(); // Prevent form submission
     
