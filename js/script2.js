@@ -84,11 +84,7 @@ function logout(username) {
 
 
 if(window.location.pathname == "Task4_login/pages/signin.html"){
-    btnLog.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent form submission
-    
-        signinn()
-    });
+
 }
 
 function isEmpty(...args){
@@ -147,5 +143,9 @@ function add_get_username(emailLog){
 
 
 
+btnLog.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent form submission
 
+    signinn()
+});
 
