@@ -43,7 +43,7 @@ function signinn(){
         var username = add_get_username(emailLog)
         sessionStorage.setItem("loginUsers",JSON.stringify(users_login) ) ;
 
-        window.location.pathname = "pages/home.html" ;
+        window.location.pathname = "Task4_login/pages/home.html" ;
         
     }
 
