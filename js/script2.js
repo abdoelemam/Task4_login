@@ -51,20 +51,32 @@ function signinn(){
 
 
 
-if (window.location.pathname == "Task4_login/pages/home.html") {
-    function display() {
-        // Check if there is a logged-in user
-        if (users_login.length > 0) {
-            conUser.innerHTML = `<span class="text-white fs-4 text-center">welcome ${users_login[users_login.length - 1]}</span>`;
-            con_logout.innerHTML = `<a href="#" onclick="logout()" class="btn btn-log text-white btn-outline-warning">Log Out</a>`;
-        } else {
-            // No logged-in user
-            conUser.innerHTML = `<span class="text-white fs-4 text-center">Please log in.</span>`;
-            con_logout.innerHTML = ``;
-        }
-    }
+// if (window.location.pathname == "Task4_login/pages/home.html") {
+//     function display() {
+//         // Check if there is a logged-in user
+//         if (users_login.length > 0) {
+//             conUser.innerHTML = `<span class="text-white fs-4 text-center">welcome ${users_login[users_login.length - 1]}</span>`;
+//             con_logout.innerHTML = `<a href="#" onclick="logout()" class="btn btn-log text-white btn-outline-warning">Log Out</a>`;
+//         } else {
+//             // No logged-in user
+//             conUser.innerHTML = `<span class="text-white fs-4 text-center">Please log in.</span>`;
+//             con_logout.innerHTML = ``;
+//         }
+//     }
 
-    display();
+//     display();
+// }
+
+function display() {
+    // Check if there is a logged-in user
+    if (users_login.length > 0) {
+        conUser.innerHTML = `<span class="text-white fs-4 text-center">welcome ${users_login[users_login.length - 1]}</span>`;
+        con_logout.innerHTML = `<a href="#" onclick="logout()" class="btn btn-log text-white btn-outline-warning">Log Out</a>`;
+    } else {
+        // No logged-in user
+        conUser.innerHTML = `<span class="text-white fs-4 text-center">Please log in.</span>`;
+        con_logout.innerHTML = ``;
+    }
 }
 
 function logout(username) {
@@ -140,6 +152,11 @@ function add_get_username(emailLog){
    
 //     con_logout.innerHTML = `<a href="./pages/signin.html" onclick="logout()" class="btn btn-log text-white btn-outline-warning">log out</a>`
 // }
+
+if (window.location.pathname.includes("home.html")) {
+    display();
+}
+
 
 
 
